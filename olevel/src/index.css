@@ -1,0 +1,83 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width:100vw;
+    height:100vh;
+    background-image: url("../assets/morning.jpg");
+    cursor: url("../assets/stick.png"),auto;
+
+}  
+.heading{
+    color: rgba(255, 255, 255, 0.404);
+    position: absolute;
+    font-size: 5vw;
+    top: 5vh;
+    font-family: "Ink Free";
+    transition: 0.7s;
+    text-shadow: none;
+    cursor: pointer;
+}
+.heading:hover{
+    color: white;
+    font-size: 5.5vw;
+    text-shadow: 4px 3px 4px rgba(0, 0, 0, 0.96);
+}
+.main{
+    width: 80%;
+    height: 68%;
+    margin-top: 7%;
+    background: rgba(0, 0, 0, 0.322);
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    cursor: url("../assets/stick.png"),auto;
+    flex-wrap: wrap;
+    border: 10px solid rgba(255, 255, 255, 0.411);
+    border-radius: calc(2vh + 2vh);
+    a{
+        position: relative;
+        min-width: 250px;
+        max-width: 385px;
+        height:15%;
+        color: white;
+        text-decoration: none;
+        background: transparent;
+        font-family: "Orbitron";
+        font-size: calc(1.3vw + 1.3vh);
+        border-radius: calc(1vh + 1vh);
+        border: 1px solid white;
+        transition: 0.4s;
+        margin-left: 10%;
+        margin-right: 4%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    a:hover{
+        min-width: 270px;
+        max-width: 385px;
+        height:17%;
+        backdrop-filter: blur(5px);
+        border: 1px solid transparent;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        cursor: url("../assets/stick.png"),30px 30px;
+            
+    }
+}
+@media (max-width: 1090px) {
+    .main{
+        a{
+            margin-left: 4%;
+            margin-right: 4%;
+
+            }
+        }
+}

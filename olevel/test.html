@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="background: rgba(144, 238, 144, 0.644);">hi there</h1>
+</body>
+<script>
+    let html = [{
+        question: "Which tag is used to define an inline frame?",
+        options: {
+            a: "<iframe>",
+            b: "<frame>",
+            c: "<if>",
+            d: "<inlineframe>"
+        },
+        answer: "a"
+    },
+    {
+        question: "Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed?",
+        options: {
+            a: "src",
+            b: "alt",
+            c: "title",
+            d: "href"
+        },
+        answer: "b"
+    },
+    {
+        question: "What is the correct HTML for creating a hyperlink?",
+        options: {
+            a: "<a href='http://www.example.com'>\nExample</a>",
+            b: "<a name='http://www.example.com'>\nExample</a>",
+            c: "<a src='http://www.example.com'>\nExample</a>",
+            d: "<hyperlink>http://www.example.com\n</hyperlink>"
+        },
+        answer: "a"
+    }
+];
+    let text = eval(new String("<h1>visz</h1>"))
+    console.log("<h1>visz</h1>");
+    
+    let v = eval("html[0].options."+String.fromCharCode(97))
+    let div = document.createElement("div")
+    div.innerText = v
+
+    let body = document.querySelector("body")
+    body.appendChild(div)
+    // document.write(v)
+
+</script>
+</html>
